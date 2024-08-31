@@ -14,7 +14,7 @@
     <!-- ajout d'une première ligne du header pour la langue, un bref descriptif et un CTA -->
      
    
-   <div class=" bg-white border-gray-200 dark:bg-gray-900 hidden sm md lg:block">
+   <div class= "container mx-auto bg-white border-gray-200 dark:bg-gray-900 hidden sm md lg:block">
        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
       <p class="text-[#8e8e8e] pl-12">En activité depuis 2007</p>
       <div class="flex items-center">
@@ -73,13 +73,16 @@
            
    <!-- ajout de navigation à partir de ce code https://flowbite.com/docs/components/navbar/ -->
    
-   <nav class="nav flex items-center justify-between px-4 py-2 bg-[#8e8e8e] dark:bg-gray-900">
+   <nav class=" container mx-auto nav flex items-center justify-between px-4 py-2 bg-[#8e8e8e] dark:bg-gray-900">
     <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="images/electros residentiels-gris.png" class="nav__logo" alt="Électros Multilogements Logo">
     </a>
-    <button class="md:hidden bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
-      Menu
-    </button>
+    <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+  </button>
     <ul class="hidden md:flex flex-row space-x-8 rtl:space-x-reverse">
       <li>
         <a href="/index.html" class="text-white py-2 px-3 rounded hover:bg-gray-700">Accueil</a>
@@ -95,16 +98,63 @@
       </li>
     </ul>
   </nav>
-     
+      
        </header>
     <main>
-       <section>
-        carroussel
-       </section>
   
-        <section>
-            catégories d'électros
-        </section>
+         <!-- ajout de HeroIII à partir de ce code https://app.tuk.dev/listing/E-commerce/Components/heros-->
+         <section>
+         <div class="dark:bg-gray-900">
+          <div class="container mx-auto py-9 md:py-12 lg:py-16 object-cover">
+            <div class="relative mx-4">
+              <img
+                src="images/electros-residentiels.jpg"
+                alt="electros résidentiels"
+                role="img"
+                class="w-full h-full hidden lg:block object-cover"
+              />
+              <img
+                src="images/electros-residentiels.jpg"
+                alt="electros résidentiels"
+                role="img"
+                class="hidden sm:block lg:hidden w-full h-full object-cover"
+              />
+              <img
+                src="images/electros-residentiels.jpg"
+                alt="electros résidentiels"
+                role="img"
+                class="sm:hidden w-full h-full"
+              />
+        
+              <div
+                class="absolute z-10 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start"
+              >
+                <h1
+                  class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-800 sm:w-8/12"
+                >
+                  Électroménagers résidentiels
+                </h1>
+                <p
+                  class="text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-5/12"
+                >
+                  Pour les entrepreneurs de multilogements et gestionnaires de propriétés.
+                </p>
+                <button
+                  class="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
+                >
+                  Demandez un rendez-vous
+                </button>
+              </div>
+              <button
+                class="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
+              >
+                Demandez un rendez-vous
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- à corriger resposive petits écrans-->
+      </section>
         <section>
             À propos
             call to action
