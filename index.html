@@ -77,24 +77,22 @@
     <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="images/electros-residentiels-gris.png" class="nav__logo" alt="Électros Multilogements Logo">
     </a>
-    <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
       <span class="sr-only">Open main menu</span>
       <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
       </svg>
   </button>
-    <ul class="hidden md:flex flex-row space-x-8 rtl:space-x-reverse">
+  <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
       <li>
-        <a href="/index.html" class="text-white py-2 px-3 rounded hover:bg-gray-700">Accueil</a>
+        <a href="/index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Accueil</a>
       </li>
       <li>
-        <a href="#" class="text-white py-2 px-3 rounded hover:bg-gray-700">Cuisine</a>
+        <a href="/nos-offres.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nos offres</a>
       </li>
       <li>
-        <a href="#" class="text-white py-2 px-3 rounded hover:bg-gray-700">Buanderie</a>
-      </li>
-      <li>
-        <a href="#" class="text-white py-2 px-3 rounded hover:bg-gray-700">Contact</a>
+        <a href="/contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
       </li>
     </ul>
   </nav>
@@ -104,11 +102,15 @@
   
          <!-- ajout de HeroIII à partir de ce code https://app.tuk.dev/listing/E-commerce/Components/heros-->
          <section>
+          <div class="container mx-auto mb-12">
+            <div class="grid grid-rows-auto-1fr">  
          <div class="dark:bg-gray-900">
           <div class="container mx-auto py-9 md:py-12 lg:py-16 object-cover">
             <div class="relative mx-4">
               <img
-                src="images/electros-residentiels.jpg" alt="electros résidentiels" class="w-full h-full hidden lg:block object-cover"
+                src="images/electros-residentiels.jpg" 
+                alt="electros résidentiels" 
+                class="w-full h-full hidden lg:block object-cover"
               >
               <img
                 src="images/electros-residentiels.jpg"
@@ -118,7 +120,6 @@
               <img
                 src="images/electros-residentiels.jpg"
                 alt="electros résidentiels"
-               
                 class="sm:hidden w-full h-full"
               >
         
@@ -149,8 +150,12 @@
             </div>
           </div>
         </div>
-        <!-- à corriger resposive petits écrans-->
+            </div>
+          </div>
+        <!-- à corriger responsive petits écrans-->
       </section>
+
+     
 
       <!-- ajout de grid Tailwind CSS pour afficher les catégories-->
 
@@ -186,9 +191,43 @@
           </div>
           </div>
       </section>
-        <section>
-            À propos
-            call to action
+<!-- ajout section notre mission + call to action à partir de ce code https://www.creative-tim.com/twcomponents/component/application-header-with-clip-path -->
+<section>
+  <!-- component -->
+      <div class="container mx-auto mb-12">
+        <div class="grid grid-rows-auto-1fr">    
+
+  <div class="flex bg-white" style="height:600px;">
+      <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+          <div>
+              <h2 class="text-3xl mb-8 font-semibold text-[#8e8e8e] md:text-4xl">Des solutions  <span class="text-gray-500">clés en main </span>pour vos projets immobiliers.</h2>
+              <p class="mt-2 text-sm leading-10 text-gray-500 md:text-base">Notre mission est simple : vous accompagner dans l'équipement de vos projets immobiliers en vous proposant des solutions complètes et personnalisées.</p>
+              <p class="mt-2 text-sm leading-10 text-gray-500 md:text-base">Que vous soyez un entrepreneur en construction multilogements ou un gestionnaire de propriétés, nous mettons à votre disposition notre savoir-faire et notre réseau de fournisseurs pour vous garantir les meilleurs produits aux prix les plus compétitifs.</p>
+              
+              <div class="flex justify-center lg:justify-start mt-6">
+                <button
+                class=" sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 mr-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
+              >
+                Demandez un rendez-vous
+              </button>
+              <button
+              class=" sm:flex bg-[#8e8e8e] py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
+            >
+              Nos offres
+            </button>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
+          <div class="h-full object-cover" style="background-image: url(images/equipe-eletros-residentiels.jpg)">
+              <div class="h-full bg-black opacity-25"></div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- revoir la hauteur pour éviter le chevauchement et la répitition du bg-->
         </section>
     </main>
     <!-- ajout de footer à partir de ce code https://flowbite.com/docs/components/footer/ -->        
