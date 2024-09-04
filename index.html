@@ -101,62 +101,86 @@
        </header>
     <main>
   
-         <!-- ajout de HeroIII à partir de ce code https://app.tuk.dev/listing/E-commerce/Components/heros-->
-         <section>
-          <div class="container mx-auto mb-12 ">
-            <div class="grid grid-rows-auto-1fr ">  
-         <div class="dark:bg-gray-900 ">
-          <div class=" py-9 md:py-12 lg:py-16 object-cover">
-            <div class="relative mx-4">
-              <img
-                src="images/electros-residentiels.jpg" 
-                alt="electros résidentiels" 
-                class=" w-full h-auto hidden lg:block object-cover"
-              >
-              <img
-                src="images/electros-residentiels.jpg"
-                alt="electros résidentiels"
-                class="hidden sm:block lg:hidden w-full h-full object-cover"
-              >
-              <img
-                src="images/electros-residentiels.jpg"
-                alt="electros résidentiels"
-                class="sm:hidden w-full h-full"
-              >
-        
-              <div
-                class="absolute z-10 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start"
-              >
-                <h1
-                  class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-800 sm:w-8/12"
-                >
-                  Électroménagers résidentiels
-                </h1>
-                <p
-                  class="text-base leading-normal text-gray-800 mt-4 sm:mt-5 sm:w-5/12"
-                >
-                  Pour les entrepreneurs de multilogements et gestionnaires de propriétés.
-                </p>
-                <button
-                  class="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-                >
-                  Demandez un rendez-vous
-                </button>
-              </div>
-              <button
-                class="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez un rendez-vous
-              </button>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-        <!-- à corriger responsive petits écrans-->
-      </section>
+         <!-- ajout de carrousel à partir de ce code https://flowbite.com/docs/components/carousel/ -->
+        <section>
+            
 
-     
+          <div id="indicators-carousel" class=" container mx-auto mt-6 relative w-full" data-carousel="slide">
+              <div
+                          class="absolute z-40 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start"
+                        >
+                          <h1
+                            class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white sm:w-8/12"
+                          >
+                            Électroménagers résidentiels
+                          </h1>
+                        
+                          <button
+                            class="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
+                          >
+                            Demandez un rendez-vous
+                          </button>
+                        </div>
+                        <button
+                          class="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
+                        >
+                          Demandez un rendez-vous
+                        </button>
+              <!-- Carousel wrapper -->
+              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                   <!-- Item 1 -->
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                      <img src="/images/electros-multilogement-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/images/electros-multilogements-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/images/electros-residentiels-cuisine.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
+                  </div>
+                  <!-- Item 4 -->
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <img src="/images/electros-multilogements-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
+                  </div>
+                   <!-- Item 5 -->
+                   <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/images/electros-residentiels-buanderie.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels cuisine">
+                </div>
+                 
+              </div>
+              
+              <!-- Slider indicators -->
+              <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                 
+              </div>
+              <!-- Slider controls -->
+              <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                  </span>
+              </button>
+              <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                      </svg>
+                      <span class="sr-only">Next</span>
+                  </span>
+              </button>
+              
+          </div>
+          
+                  </section>
 
       <!-- ajout de grid Tailwind CSS pour afficher les catégories-->
 
