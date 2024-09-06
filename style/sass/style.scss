@@ -1,7 +1,23 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import '../../node_modules/tailwindcss/base.css';
+@import '../../node_modules/tailwindcss/components';
+@import '../../node_modules/tailwindcss/utilities';
 
+@font-face {
+    font-family: 'Roboto Static';
+    src: url('/fonts/Roboto-Black.ttf') format('woff2'),
+         url('/fonts/Roboto-Regular.ttf') format('woff');
+  }
+  
+  .font-sans {
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+  html, body, * {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 .nav {
     width: 100%;
     height: auto;
