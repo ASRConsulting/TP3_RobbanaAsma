@@ -51,7 +51,7 @@ Flowbite : Bibliothèque de composants UI basés sur Tailwind CSS et toute autre
         
 ![Aperçu de la page Nos offres](https://raw.githubusercontent.com/ASRConsulting/TP3_RobbanaAsma/6ae501b3aba8ce63da07591c55a39d0862b18075/images/captures/nos-offres.png?token=BDKNUDM2ZFTUZAOCY7C6OLDG3PW4U)
   
-![Aperçu de la page Contact](ASRConsulting/TP3_RobbanaAsma/images/captures/nos-offres.png)
+![Aperçu de la page Contact](https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/d8dea4b8a2236c19686b37db90ed2bafe69b9cf6/images/captures/nos-offres.png)
 Aper
 
 
