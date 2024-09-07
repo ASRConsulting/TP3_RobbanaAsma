@@ -42,3 +42,10 @@
         align-items: center;
 }
 }
+
+catalogue {
+    &--img {
+        max-width: 400px;
+        max-height: 255px;
+    }
+}

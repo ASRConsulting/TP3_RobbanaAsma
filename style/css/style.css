@@ -31,4 +31,9 @@ html, body, * {
   padding: 6em;
   max-width: 70%;
   align-items: center;
+}
+
+catalogue--img {
+  max-width: 400px;
+  max-height: 255px;
 }/*# sourceMappingURL=style.css.map */

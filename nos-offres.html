@@ -1,766 +1,724 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Électros Multilogements</title>
-    <link rel="stylesheet" href="style/css/style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Électros Multilogements</title>
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </head>
+
 <body>
-  <header >
+  <header>
     <!-- ajout d'une première ligne du header pour la langue, un bref descriptif et un CTA -->
-     
-   
-   <div class= "container mx-auto bg-white border-gray-200 dark:bg-gray-900 hidden sm md lg:block">
-       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-      <p class="text-[#8e8e8e] pl-12">En activité depuis 2007</p>
-      <div class="flex items-center">
-        <a href="tel:+1234567890" class="text-[#8e8e8e] mr-4 hover:text-[#26567a]">
-          <img class="w-5 h-5" src="images/telephone.png" alt="Telephone"></a>
-        <a href="tel:+1234567890" class="text-[#8e8e8e] hover:text-[#26567a]">
-          123-456-7890</a>
+
+
+    <div class="container mx-auto bg-white border-gray-200 dark:bg-gray-900 hidden sm md lg:block">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+        <p class="text-[#8e8e8e] pl-12">En activité depuis 2007</p>
+        <div class="flex items-center">
+          <a href="tel:+1234567890" class="text-[#8e8e8e] mr-4 hover:text-[#26567a]">
+            <img class="w-5 h-5" src="images/telephone.png" alt="Telephone"></a>
+          <a href="tel:+1234567890" class="text-[#8e8e8e] hover:text-[#26567a]">
+            123-456-7890</a>
+        </div>
+
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" data-dropdown-toggle="language-dropdown-menu"
+            class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#8e8e8e] dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 hover:text-[#26567a] dark:hover:bg-gray-700 dark:hover:text-white">
+            <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada">
+            English (Canada)
+          </button>
+
+          <!-- Dropdown -->
+          <div
+            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+            id="language-dropdown-menu">
+            <ul class="py-2 font-medium" role="none">
+              <li>
+                <a href="/index.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <div class="inline-flex items-center">
+                    <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada">
+                    Français (Canada)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/index.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <div class="inline-flex items-center">
+                    <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada">
+                    English (Canada)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <div class="inline-flex items-center">
+                    <img class="w-5 h-5 mr-2" src="images/tunisie.png" alt="Drapeau du Canada">
+                    العربية
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button data-collapse-toggle="language-dropdown-menu" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="language-dropdown-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
       </div>
-      
-       <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-           <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#8e8e8e] dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 hover:text-[#26567a] dark:hover:bg-gray-700 dark:hover:text-white">
-               <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada"> 
-             English (Canada)
-           </button>
-           
-           <!-- Dropdown -->
-         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
-           <ul class="py-2 font-medium" role="none">
-             <li>
-               <a href="/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
-                 <div class="inline-flex items-center">
-                   <img class="w-5 h-5 mr-2" src="/images/canada.png" alt="Drapeau du Canada">              
-                   Français (Canada)
-                 </div>
-               </a>
-             </li>
-             <li>
-               <a href="/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
-                 <div class="inline-flex items-center">
-                   <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada">              
-                   English (Canada)
-                 </div>
-               </a>
-             </li>
-             <li>
-               <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
-                 <div class="inline-flex items-center">
-                   <img class="w-5 h-5 mr-2" src="images/tunisie.png" alt="Drapeau du Canada">               
-                   العربية
-                 </div>
-               </a>
-             </li>
-           </ul>   
-         </div>
-      
-           <button data-collapse-toggle="language-dropdown-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="language-dropdown-menu" aria-expanded="false">
-             <span class="sr-only">Open main menu</span>
-             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-             </svg>
-         </button>
-       </div>
-       </div>
-   </div>
-     
-           
-   <!-- ajout de navigation à partir de ce code https://flowbite.com/docs/components/navbar/ -->
-   
-   <nav class=" container mx-auto nav flex items-center justify-between px-4 py-2 bg-[#8e8e8e] dark:bg-gray-900">
-    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="images/electros-residentiels-gris.png" class="nav__logo" alt="Électros Multilogements Logo">
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-      </svg>
-  </button>
-  <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="/index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Accueil</a>
-      </li>
-      <li>
-        <a href="/nos-offres.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nos offres</a>
-      </li>
-      <li>
-        <a href="/contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-      
-       </header>
-    <main>
+    </div>
 
 
+    <!-- ajout de navigation à partir de ce code https://flowbite.com/docs/components/navbar/ -->
 
-<!-- ajout de carrousel à partir de ce code https://flowbite.com/docs/components/carousel/ -->
-        <section>
-            
-
-<div id="indicators-carousel" class=" container mx-auto mt-6 relative w-full" data-carousel="slide">
-    <div
-                class="absolute z-40 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start"
-              >
-                <h1
-                  class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white sm:w-8/12"
-                >
-                  Électroménagers résidentiels
-                </h1>
-              
-                <button
-                  class="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-                >
-                  Demandez un rendez-vous
-                </button>
-              </div>
-              <button
-                class="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez un rendez-vous
-              </button>
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="/images/electros-multilogement-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/images/electros-multilogements-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/images/electros-residentiels-cuisine.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/images/electros-multilogements-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels multilogements">
-        </div>
-         <!-- Item 5 -->
-         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/images/electros-residentiels-buanderie.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="electros résidentiels cuisine">
+    <nav class=" container mx-auto nav flex items-center justify-between px-4 py-2 bg-[#8e8e8e] dark:bg-gray-900">
+      <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="images/electros-residentiels-gris.png" class="nav__logo" alt="Électros Multilogements Logo">
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="/index.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Accueil</a>
+          </li>
+          <li>
+            <a href="/nos-offres.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nos
+              offres</a>
+          </li>
+          <li>
+            <a href="/contact.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
       </div>
-       
-    </div>
-    
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-       
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+    </nav>
+
+  </header>
+
+  <main>
+
+
+
+    <!-- ajout de carrousel à partir de ce code https://flowbite.com/docs/components/carousel/ -->
+    <section>
+
+
+      <div id="indicators-carousel" class=" container mx-auto mt-6 relative w-full" data-carousel="slide">
+        <div
+          class="absolute z-40 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white sm:w-8/12">
+            Électroménagers résidentiels
+          </h1>
+
+          <button
+            class="hidden sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+            Demandez un rendez-vous
+          </button>
+        </div>
+        <button
+          class="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+          Demandez un rendez-vous
+        </button>
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="/images/electros-multilogement-4.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="electros résidentiels multilogements">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/electros-multilogements-1.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="electros résidentiels multilogements">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/electros-residentiels-cuisine.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="electros résidentiels multilogements">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/electros-multilogements-3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="electros résidentiels multilogements">
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/electros-residentiels-buanderie.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="electros résidentiels cuisine">
+          </div>
+
+        </div>
+
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+            data-carousel-slide-to="4"></button>
+
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
             </svg>
             <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
             </svg>
             <span class="sr-only">Next</span>
-        </span>
-    </button>
-    
-</div>
+          </span>
+        </button>
 
-        </section>
+      </div>
 
-        <!-- ajout d'un titre de section à partir de ce code https://flowbite.com/docs/typography/headings/ -->
+    </section>
 
-
-<div class="container mx-auto mt-12 ">
-  <h2 class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#8e8e8e] md:text-5xl lg:text-6xl dark:text-white">Nos solutions clés en main</h2>
-<p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">pour la cuisine et la buanderie</p>
-
-</div>
-        <!-- ajout de la section offre de vente dans un accordéon à partir de ce code https://flowbite.com/docs/components/accordion/-->
-
-        
-        <section class="container mx-auto mt-6">
+    <!-- ajout d'un titre de section à partir de ce code https://flowbite.com/docs/typography/headings/ -->
 
 
-          <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-gray-900 dark:bg-gray-800 text-white dark:text-white">
-            <h2 id="accordion-color-heading-1">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
-                <span>Duo Cuisine Innox ou blancs</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo cuisine innox ou blancs est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Un réfrigérateur></li>
-                  <li>Une cuisinière électrique</li>
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button>            
-              </div>
-            </div>
-            <h2 id="accordion-color-heading-2">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-                <span>Trio Cuisine</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le trio cuisine innox ou blancs est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Un réfrigérateur></li>
-                  <li>Une cuisinière électrique</li>
-                  <li>Une hotte-dextraction</li>
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button> 
-              </div>
-            </div>
-            <h2 id="accordion-color-heading-3">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-                <span>Quatro Cuisine</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le quatro cuisine innox ou blancs est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Un réfrigérateur></li>
-                  <li>Une cuisinière électrique</li>
-                  <li>Une hotte-dextraction</li>
-                  <li>Un lave-vaisselle</li>
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
-             
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button> 
-             </div>
-            </div>
-            <h2 id="accordion-color-heading-4">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-                <span>Cinco Cuisine</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le cinco cuisine innox ou blancs est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Un réfrigérateur></li>
-                  <li>Une cuisinière électrique</li>
-                  <li>Une hotte-dextraction</li>
-                  <li>Un lave-vaisselle</li>
-                  <li>Un four micro-ondes></li>
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et fonctionnelle.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button> 
-            </div>
-            </div>
-            <h2 id="accordion-color-heading-5">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
-                <span>Duo buanderie à chargement frontal</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
-              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo buanderie à chargement frontal est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Une machine-à-laver</li>
-                  <li>Une sècheuse</li>
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Maximisez la valeur de votre investissement immobilier en optant pour nos solutions de buanderie intelligentes. Nos experts travaillent en étroite collaboration avec vous pour créer des espaces fonctionnels et esthétiques qui répondent aux besoins de votre clientèle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">En choisissant nos machines connectées et nos systèmes de paiement sécurisés, vous offrez à vos locataires une expérience utilisateur fluide et pratique, tout en générant des revenus supplémentaires.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Faites de la buanderie un élément clé de votre stratégie immobilière.</p>
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button> 
-              </div>
-            </div>
-            <h2 id="accordion-color-heading-6">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-6" aria-expanded="false" aria-controls="accordion-color-body-6">
-                <span>Duo buanderie à chargement vertical</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
-              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo buanderie à chargement frontal est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Une machine-à-laver</li>
-                  <li>Une sècheuse</li>
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Maximisez la valeur de votre investissement immobilier en optant pour nos solutions de buanderie intelligentes. Nos experts travaillent en étroite collaboration avec vous pour créer des espaces fonctionnels et esthétiques qui répondent aux besoins de votre clientèle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">En choisissant nos machines connectées et nos systèmes de paiement sécurisés, vous offrez à vos locataires une expérience utilisateur fluide et pratique, tout en générant des revenus supplémentaires.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Faites de la buanderie un élément clé de votre stratégie immobilière.</p>
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button> 
-              </div>
-            </div>
-            <h2 id="accordion-color-heading-7">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-color-body-7" aria-expanded="false" aria-controls="accordion-color-body-7">
-                <span>Duo buanderie superposées</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
-              <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo buanderie superposées est composé d'</p>
-                <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
-                  <li>Une machine-a-laver et une sècheuse superposées</li>
-                  
-                </ul>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Maximisez la valeur de votre investissement immobilier en optant pour nos solutions de buanderie intelligentes. Nos experts travaillent en étroite collaboration avec vous pour créer des espaces fonctionnels et esthétiques qui répondent aux besoins de votre clientèle.</p>
-                <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">En choisissant nos machines connectées et nos systèmes de paiement sécurisés, vous offrez à vos locataires une expérience utilisateur fluide et pratique, tout en générant des revenus supplémentaires.</p>
-                <p class="text-[#8e8e8e] dark:text-gray-400">Faites de la buanderie un élément clé de votre stratégie immobilière.</p>
-                <button
-                class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700"
-              >
-                Demandez une soumission
-              </button> 
-              </div>
+    <div class="container mx-auto mt-12 ">
+      <h2
+        class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#8e8e8e] md:text-5xl lg:text-6xl dark:text-white">
+        Nos solutions clés en main</h2>
+      <p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">pour
+        la cuisine et la buanderie</p>
+
+    </div>
+    <!-- ajout de la section offre de vente dans un accordéon à partir de ce code https://flowbite.com/docs/components/accordion/-->
+
+
+    <section class="container mx-auto mt-6">
+
+
+      <div id="accordion-color" data-accordion="collapse"
+        data-active-classes="bg-gray-900 dark:bg-gray-800 text-white dark:text-white">
+        <h2 id="accordion-color-heading-1">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+            <span>Duo Cuisine Innox ou blancs</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo cuisine innox ou blancs est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Un réfrigérateur></li>
+              <li>Une cuisinière électrique</li>
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à
+              notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des
+              équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-2">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+            aria-controls="accordion-color-body-2">
+            <span>Trio Cuisine</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le trio cuisine innox ou blancs est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Un réfrigérateur></li>
+              <li>Une cuisinière électrique</li>
+              <li>Une hotte-dextraction</li>
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à
+              notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des
+              équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-3">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+            aria-controls="accordion-color-body-3">
+            <span>Quatro Cuisine</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le quatro cuisine innox ou blancs est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Un réfrigérateur></li>
+              <li>Une cuisinière électrique</li>
+              <li>Une hotte-dextraction</li>
+              <li>Un lave-vaisselle</li>
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à
+              notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des
+              équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
+
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-4">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+            aria-controls="accordion-color-body-4">
+            <span>Cinco Cuisine</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le cinco cuisine innox ou blancs est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Un réfrigérateur></li>
+              <li>Une cuisinière électrique</li>
+              <li>Une hotte-dextraction</li>
+              <li>Un lave-vaisselle</li>
+              <li>Un four micro-ondes></li>
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Offrez à vos clients un confort de vie inégalé grâce à
+              notre offre duo d'électroménagers haut de gamme. Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Un réfrigérateur et une cuisinière aux dimensions
+              standards, inox ou blanc, allient design raffiné et technologie de pointe pour une cuisine moderne et
+              fonctionnelle.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Robustes et durables, nous mettons à votre disposition des
+              équipements conçus pour résister à un usage intensif et vous assurer une tranquillité d'esprit.</p>
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-5">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-5" aria-expanded="false"
+            aria-controls="accordion-color-body-5">
+            <span>Duo buanderie à chargement frontal</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo buanderie à chargement frontal est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Une machine-à-laver</li>
+              <li>Une sècheuse</li>
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Maximisez la valeur de votre investissement immobilier en
+              optant pour nos solutions de buanderie intelligentes. Nos experts travaillent en étroite collaboration
+              avec vous pour créer des espaces fonctionnels et esthétiques qui répondent aux besoins de votre clientèle.
+            </p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">En choisissant nos machines connectées et nos systèmes de
+              paiement sécurisés, vous offrez à vos locataires une expérience utilisateur fluide et pratique, tout en
+              générant des revenus supplémentaires.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Faites de la buanderie un élément clé de votre stratégie
+              immobilière.</p>
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-6">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-6" aria-expanded="false"
+            aria-controls="accordion-color-body-6">
+            <span>Duo buanderie à chargement vertical</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo buanderie à chargement frontal est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Une machine-à-laver</li>
+              <li>Une sècheuse</li>
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Maximisez la valeur de votre investissement immobilier en
+              optant pour nos solutions de buanderie intelligentes. Nos experts travaillent en étroite collaboration
+              avec vous pour créer des espaces fonctionnels et esthétiques qui répondent aux besoins de votre clientèle.
+            </p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">En choisissant nos machines connectées et nos systèmes de
+              paiement sécurisés, vous offrez à vos locataires une expérience utilisateur fluide et pratique, tout en
+              générant des revenus supplémentaires.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Faites de la buanderie un élément clé de votre stratégie
+              immobilière.</p>
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+        <h2 id="accordion-color-heading-7">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-white dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-[#8e8e8e] hover:text-white dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-7" aria-expanded="false"
+            aria-controls="accordion-color-body-7">
+            <span>Duo buanderie superposées</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Le duo buanderie superposées est composé d'</p>
+            <ul class="ps-5 text-[#8e8e8e] list-disc dark:text-gray-400 mb-2">
+              <li>Une machine-a-laver et une sècheuse superposées</li>
+
+            </ul>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">Maximisez la valeur de votre investissement immobilier en
+              optant pour nos solutions de buanderie intelligentes. Nos experts travaillent en étroite collaboration
+              avec vous pour créer des espaces fonctionnels et esthétiques qui répondent aux besoins de votre clientèle.
+            </p>
+            <p class="mb-2 text-[#8e8e8e] dark:text-gray-400">En choisissant nos machines connectées et nos systèmes de
+              paiement sécurisés, vous offrez à vos locataires une expérience utilisateur fluide et pratique, tout en
+              générant des revenus supplémentaires.</p>
+            <p class="text-[#8e8e8e] dark:text-gray-400">Faites de la buanderie un élément clé de votre stratégie
+              immobilière.</p>
+            <button
+              class="w-full text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+              Demandez une soumission
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ajout d'un titre de section à partir de ce code https://flowbite.com/docs/typography/headings/ -->
+
+
+      <div class="container mx-auto mt-12 ">
+        <h2
+          class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#8e8e8e] md:text-5xl lg:text-6xl dark:text-white">
+          Nos marques</h2>
+        <p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+          Nous négocions pour vous les meilleures conditions de la marque de votre choix!</p>
+        <div class="flex justify-center items-center">
+          <button
+            class="text-center text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
+            Demandez une soumission
+          </button>
+        </div>
+      </div>
+      <!-- ajout d'un tableau avec les marques -->
+    </section>
+
+    <section id="marques" class="container mx-auto py-12">
+      <div class="overflow-x-auto bg-white dark:bg-neutral-700">
+        <table class="  container mx-automin-w-full text-left text-sm whitespace-nowrap">
+
+          <tr>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150 max-w-200"
+                src="images/logos_marques/120x50.webp" alt="Insigna"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/AVG_100x100.webp"
+                alt="AVG"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/blomberg.avif"
+                alt="blomberg"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/CAFE.webp"
+                alt="Cafe"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Cavaliere.webp"
+                alt="Cavaliere"></td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/Electrolux_100x100.avif" alt="Électrolux"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Elica.avif"
+                alt="Elica"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/Excelsior_4a00c56a-d068-436c-a525-cb238742d278_100x100.avif" alt="Excelsior">
+            </td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Fisher_Paykel.webp"
+                alt="Fisher_Paykel"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/FORNO_100x100.webp"
+                alt="Forno"></td>
+          </tr>
+
+          <tr>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/Frigidaire_Gallery_100x100.avif" alt="Frigidaire"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/Frigidaire_Professional_100x100.avif" alt="Frigidaire professional"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Fulgor_Milano.avif"
+                alt="Fulgor Milano"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/GE_Appliances_100x100.avif" alt="GE Appliances"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/GE_Profile_100x100.webp" alt="GE Profile"></td>
+          </tr>
+
+          <tr>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Haier_100x100.avif"
+                alt="Haier"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/Hisense_100x100.avif" alt="Hisense"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/SAMSUNG_100x100.avif" alt="Samsung"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/KOBE_100x100.avif"
+                alt="Kobe"></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150"
+                src="images/logos_marques/Koolatron_100x100.avif" alt="Koolatron"></td>
+          </tr>
+
+          <tr>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/LG_100x100.avif"
+                alt=""></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/LG_STUDIO.webp"
+                alt=""></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/maytag.avif" alt="">
+            </td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Monogram.webp"
+                alt=""></td>
+            <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Moffat.webp" alt="">
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </section>
+
+    <!-- ajout de section pour présenter quelques produits-->
+    <!-- Section pour présenter quelques produits -->
+    <section id="gamme" class="container mx-auto py-12 px-4 md:px-8 lg:px-12">
+      <div class="container mx-auto mt-12">
+        <h2
+          class="text-center mb-4 text-3xl md:text-4xl lg:text-5xl font-extrabold leading-none tracking-tight text-[#8e8e8e] dark:text-white">
+          Un aperçu de notre gamme
+        </h2>
+        <p
+          class="mb-6 text-base md:text-lg lg:text-xl font-normal text-center text-gray-500 sm:px-8 md:px-12 lg:px-16 xl:px-48 dark:text-gray-400">
+          Fort de notre expérience dans l'équipement de multilogements, nous sommes convaincus de pouvoir vous apporter
+          une réelle valeur ajoutée. Un rendez-vous nous permettra d'analyser vos besoins spécifiques et de vous
+          présenter une sélection d'électroménagers performants et esthétiques.
+        </p>
+      </div>
+
+      <!-- Produits -->
+      <div class="2xl:container 2xl:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Réfrigérateur 4 portes</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/4-portes-français.avif"
+                alt="réfrigérateurs à quatre portes" />
             </div>
           </div>
 
-           <!-- ajout d'un titre de section à partir de ce code https://flowbite.com/docs/typography/headings/ -->
-
-
-<div class="container mx-auto mt-12 ">
-  <h2 class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#8e8e8e] md:text-5xl lg:text-6xl dark:text-white">Nos marques</h2>
-<p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Nous négocions pour vous les meilleures conditions de la marque de votre choix!</p>
-<div class="flex justify-center items-center">
-  <button class="text-center text-sm rounded-md bg-gray-800 tracking-wide font-medium text-white px-4 py-3 mt-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">
-    Demandez une soumission
-  </button>
-</div>
-</div>
-        <!-- ajout d'un tableau avec les marques -->  
-        </section>
-
-        <section id="marques" class="container mx-auto py-12">
-          <div class="overflow-x-auto bg-white dark:bg-neutral-700">
-              <table class="  container mx-automin-w-full text-left text-sm whitespace-nowrap">
-               
-                      <tr>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150 max-w-200" src="images/logos_marques/120x50.webp" alt="Insigna"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/AVG_100x100.webp" alt="AVG"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/blomberg.avif" alt="blomberg"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/CAFE.webp" alt="Cafe"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Cavaliere.webp" alt="Cavaliere"></td>
-                      </tr>
-                      <tr>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Electrolux_100x100.avif" alt="Électrolux"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Elica.avif" alt="Elica"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Excelsior_4a00c56a-d068-436c-a525-cb238742d278_100x100.avif" alt="Excelsior"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Fisher_Paykel.webp" alt="Fisher_Paykel"></td>
-                          <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/FORNO_100x100.webp" alt="Forno"></td>
-                      </tr>
-
-                      <tr>
-                        <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Frigidaire_Gallery_100x100.avif" alt="Frigidaire"></td>
-                        <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Frigidaire_Professional_100x100.avif" alt="Frigidaire professional"></td>
-                        <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Fulgor_Milano.avif" alt="Fulgor Milano"></td>
-                        <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/GE_Appliances_100x100.avif" alt="GE Appliances"></td>
-                        <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/GE_Profile_100x100.webp" alt="GE Profile"></td>
-                    </tr>
-
-                    <tr>
-                      <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Haier_100x100.avif" alt="Haier"></td>
-                      <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Hisense_100x100.avif" alt="Hisense"></td>
-                      <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/SAMSUNG_100x100.avif" alt="Samsung"></td>
-                      <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/KOBE_100x100.avif" alt="Kobe"></td>
-                      <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Koolatron_100x100.avif" alt="Koolatron"></td>
-                  </tr>
-
-                  <tr>
-                    <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/LG_100x100.avif" alt=""></td>
-                    <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/LG_STUDIO.webp" alt=""></td>
-                    <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/maytag.avif" alt=""></td>
-                    <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Monogram.webp" alt=""></td>
-                    <td class="px-6 py-4"><img class="h-auto max-w-300 min-w-150" src="images/logos_marques/Moffat.webp" alt=""></td>
-                </tr>
-                  
-              </table>
-          </div>
-      </section>
-
-      <!-- ajout de section pour présenter quelques produits-->
-        <section id="'gamme" class="container mx-auto py-12">
-          <div class="container mx-auto mt-12 ">
-            <h2 class="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#8e8e8e] md:text-5xl lg:text-6xl dark:text-white">Un aperçu de notre gamme</h2>
-          <p class="mb-6 text-lg font-normal text-center text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Fort de notre expérience dans l'équipement de multilogements, nous sommes convaincus de pouvoir vous apporter une réelle valeur ajoutée. Un rendez-vous nous permettra d'analyser vos besoins spécifiques et de vous présenter une sélection d'électroménagers performants et esthétiques</p>
-             </div>
-
-             <!-- ajout de produits à partir de ce code  https://tuk.dev/components/E-commerce/Components/Product_Reviews/product_review_1-->
-
-             <div class="2xl:container 2xl:mx-auto">
-             
-                <div
-                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-                >
-                  <div class="bg-white dark:bg-gray-800">
-                    <div class="">
-                      <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                       Réfrigérateur 4 portes
-                      </h2>
-                    
-                    </div>
-                    <div class="flex justify-center items-center">
-                      
-                      <img
-                        class=""
-                        src="images/produits/4-portes-français.avif"
-                        alt="réfrigérateurs à quatre portes"/>
-                    </div>
-                    
-                  </div>
-                  <div class="bg-white dark:bg-gray-800 text-center">
-                    <div class="">
-                      <h2 class="text-xl text-gray-600 dark:text-white">
-                        Réfrigérateur trois portes
-                      </h2>
-                    
-                    </div>
-                    <div class="flex justify-center items-center">
-                      <img
-                        class=""
-                        src="images/produits/3-portes-français.avif"
-                        alt="réfrigérateurs à trois portes"
-                      
-                      />
-                    </div>
-                    
-                  </div>
-                  <div class="bg-white dark:bg-gray-800">
-                    <div class="">
-                      <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                        Réfrigérateur tout en un
-                      </h2>
-                    
-                    </div>
-                    <div class="flex justify-center items-center">
-                      <img
-                        class=""
-                        src="images/produits/All_Refrigerator.avif"
-                        alt="Réfrigérateur tout en un"
-                      />
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-        
-                <!--2àme ligne-->
-               
-                <div
-                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-                >
-                  <div class="bg-white dark:bg-gray-800">
-                    <div class="">
-                      <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                       Congélateur en bas
-                      </h2>
-                    
-                    </div>
-                    <div class="flex justify-center items-center">
-                      
-                      <img
-                        class=""
-                        src="images/produits/Bottom_Freezer.avif"
-                        alt="congélateur en bas"/>
-                    </div>
-                    
-                  </div>
-                  <div class="bg-white dark:bg-gray-800">
-                    <div class="">
-                      <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                        Réfrigérateur compact
-                      </h2>
-                    
-                    </div>
-                    <div class="flex justify-center items-center">
-                      <img
-                        class=""
-                        src="images/produits/Compact.avif"
-                        alt="Réfrigérateur compact"
-                      />
-                    </div>
-</div>
-                  <div class="bg-white dark:bg-gray-800 text-center">
-                    <div class="">
-                      <h2 class="text-xl text-gray-600 dark:text-white">
-                        Duo buanderie à chargement frontal
-                      </h2>
-                    
-                    </div>
-                    <div class="flex justify-center items-center">
-                      <img
-                        class=""
-                        src="images/produits/bundle_180x.avif"
-                        alt="Duo buanderie à chargement frontal"
-                      
-                      />
-                    </div>
-                    
-                  </div>
-                
-                    
-                  </div>
-                </div>
-
-                <!-- 3ème ligne-->
-                <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-              >
-                <div class="bg-white dark:bg-gray-800">
-                  <div class="">
-                    <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                      Lave lave-vaisselle
-                    </h2>
-                  
-                  </div>
-                  <div class="flex justify-center items-center">
-                    
-                    <img
-                      class=""
-                      src="images/produits/Top_Controls.avif"
-                      alt="Lave lave-vaisselle"/>
-                  </div>
-                  
-                </div>
-                <div class="bg-white dark:bg-gray-800 text-center">
-                  <div class="">
-                    <h2 class="text-xl text-gray-600 dark:text-white">
-                      Duo buanderie superposés
-                    </h2>
-                  
-                  </div>
-                  <div class="flex justify-center items-center">
-                    <img
-                      class=""
-                      src="images/produits/Laundry_Centers.avif"
-                      alt="Duo buanderie superposés"
-                    
-                    />
-                  </div>
-                  
-                </div>
-                <div class="bg-white dark:bg-gray-800">
-                  <div class="">
-                    <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                      Duo Laveuse secheuse
-                    </h2>
-                  
-                  </div>
-                  <div class="flex justify-center items-center">
-                    <img
-                      class=""
-                      src="images/produits/GTW680BMRWS_GTD65EBMRWS_180x.avif"
-                      alt="Duo Laveuse secheuse"
-                    />
-                  </div>
-                  
-                </div>
-              </div>
-              <!--4ème ligne-->
-              
-              <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-            >
-              <div class="bg-white dark:bg-gray-800">
-                <div class="">
-                  <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                    cuisinière biénergétique
-                  </h2>
-                
-                </div>
-                <div class="flex justify-center items-center">
-                  
-                  <img
-                    class=""
-                    src="images/produits/Dual_Fuel.avif"
-                    alt="cuisinière biénergétique"/>
-                </div>
-                
-              </div>
-              <div class="bg-white dark:bg-gray-800 text-center">
-                <div class="">
-                  <h2 class="text-xl text-gray-600 dark:text-white">
-                    hotte encastrable
-                  </h2>
-                
-                </div>
-                <div class="flex justify-center items-center">
-                  <img
-                    class=""
-                    src="images/produits/imagen_principal_2FAVC-276PS_53bac101-f580-4870-9457-6faa6d9e976c_180x.avif"
-                    alt="hotte encastrable"
-                  
-                  />
-                </div>
-                
-              </div>
-              <div class="bg-white dark:bg-gray-800">
-                <div class="">
-                  <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                    hotte d'extraction murale
-                  </h2>
-              
-                </div>
-                <div class="flex justify-center items-center">
-                  <img
-                    class=""
-                    src="images/produits/imagen_principal_2FEAO430BS_180x.webp"
-                    alt="hotte d'extraction murale"
-                  />
-                </div>
-                
-              </div>
-            </div>
-            <!--5ème ligne-->
-    
-            <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-          >
-            <div class="bg-white dark:bg-gray-800">
-              <div class="">
-                <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                 laveuse sècheuse superposées
-                </h2>
-              
-              </div>
-              <div class="flex justify-center items-center">
-                
-                <img
-                  class=""
-                  src="images/produits/imagen_principal_2FELTE730CAW_12fa06bc-2f0e-42ed-b83e-b1946c34c596_180x.webp"
-                  alt="laveuse sècheuse superposées"/>
-              </div>
-              
-            </div>
-            <div class="bg-white dark:bg-gray-800 text-center">
-              <div class="">
-                <h2 class="text-xl text-gray-600 dark:text-white">
-                  Laveuse sècheuse superposées en gris
-                </h2>
-              
-              </div>
-              <div class="flex justify-center items-center">
-                <img
-                  class=""
-                  src="images/produits/imagen_principal_2FWKEX300HBA_3df50770-27f0-4937-98dd-510bf75010c0_180x.avif"
-                  alt="Laveuse sècheuse superposées en gris"
-                
-                />
-              </div>
-              
-            </div>
-            <div class="bg-white dark:bg-gray-800">
-              <div class="">
-                <h2 class="text-xl text-gray-600 dark:text-white text-center">
-                  Laveuse sècheuse frontales
-                </h2>
-              
-              </div>
-              <div class="flex justify-center items-center">
-                <img
-                  class=""
-                  src="images/produits/Laundry_Pairs.avif"
-                  alt="Laveuse sècheuse frontales"
-                />
-              </div>
-              
+          <div class="bg-white dark:bg-gray-800 text-center">
+            <h2 class="text-xl text-gray-600 dark:text-white">Réfrigérateur trois portes</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/3-portes-français.avif"
+                alt="réfrigérateurs à trois portes" />
             </div>
           </div>
-         
-           
-  <!--fin de l'apreçu de la gamme de produits-->        
 
-        </section>
-    </main>
-    <!-- ajout de footer à partir de ce code https://flowbite.com/docs/components/footer/ -->        
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Réfrigérateur tout en un</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/All_Refrigerator.avif"
+                alt="Réfrigérateur tout en un" />
+            </div>
+          </div>
 
-<footer class="container mx-auto bottom-0 left-0 z-20 w-full p-4 bg-[#8e8e8e] border-t  md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900 dark:border-gray-600">
-  <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="/index.html" class="hover:underline">Intweb2_TP3_RobbanaAsma</a>. Tous droits réservés.
-  </span>
-  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
+
+
+          <!-- 2ème ligne de produits -->
+
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Congélateur en bas</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/Bottom_Freezer.avif" alt="Congélateur en bas" />
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Laveuse sécheuse frontales</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/Laundry_Pairs.avif"
+                alt="Laveuse sécheuse frontales" />
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800 text-center">
+            <h2 class="text-xl text-gray-600 dark:text-white">Duo buanderie</h2>
+            <p>à chargement frontal</p>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/bundle_180x.avif"
+                alt="Duo buanderie à chargement frontal" />
+            </div>
+          </div>
+
+
+          <!-- 3ème ligne de produits -->
+
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Lave-vaisselle</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/Top_Controls.avif" alt="Lave-vaisselle" />
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Cuisinière biénergétique</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/Dual_Fuel.avif" alt="Cuisinière biénergétique" />
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-gray-800">
+            <h2 class="text-xl text-gray-600 dark:text-white text-center">Duo Laveuse sécheuse</h2>
+            <div class="flex justify-center items-center h-full">
+              <img class="max-w-full h-auto" src="images/produits/GTW680BMRWS_GTD65EBMRWS_180x.avif"
+                alt="Duo Laveuse sécheuse" />
+            </div>
+          </div>
+
+
+          
+
+        </div>
+      </div>
+    </section>
+    <!-- fin de la section des produits -->
+  </main>
+  <!-- ajout de footer à partir de ce code https://flowbite.com/docs/components/footer/ -->
+
+  <footer
+    class="container mx-auto bottom-0 left-0 z-20 w-full p-4 bg-[#8e8e8e] border-t  md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900 dark:border-gray-600">
+    <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="/index.html"
+        class="hover:underline">Intweb2_TP3_RobbanaAsma</a>. Tous droits réservés.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
       <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Qui sommes-nous</a>
+        <a href="#" class="hover:underline me-4 md:me-6">Qui sommes-nous</a>
       </li>
       <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Politiques de confidentialité</a>
+        <a href="#" class="hover:underline me-4 md:me-6">Politiques de confidentialité</a>
       </li>
-      
+
       <li>
-          <a href="/contact.html" class="hover:underline">Contact</a>
+        <a href="/contact.html" class="hover:underline">Contact</a>
       </li>
-  </ul>
-</footer>
+    </ul>
+  </footer>
 
-    
 
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
+
 </html>
