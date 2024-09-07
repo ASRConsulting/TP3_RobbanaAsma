@@ -47,11 +47,11 @@ Flowbite : Bibliothèque de composants UI basés sur Tailwind CSS et toute autre
 5. Une fois les dépendances installées, vous pouvez lancer le projet avec la commande suivante : npm run dev
         
 
-![Aperçu de la page d'accueil](https://raw.githubusercontent.com/ASRConsulting/TP3_RobbanaAsma/6ae501b3aba8ce63da07591c55a39d0862b18075/images/captures/accueil.png?token=BDKNUDLYXQZ3CF5SSDXY7LDG3PW4U)
+![Aperçu de la page d'accueil](https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/0fbdb15bd97e93b7c196ba67ea3d4c5492e39bde/images/captures/accueil.png)
         
-![Aperçu de la page Nos offres](https://raw.githubusercontent.com/ASRConsulting/TP3_RobbanaAsma/6ae501b3aba8ce63da07591c55a39d0862b18075/images/captures/nos-offres.png?token=BDKNUDM2ZFTUZAOCY7C6OLDG3PW4U)
+![Aperçu de la page Nos offres](https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/d8dea4b8a2236c19686b37db90ed2bafe69b9cf6/images/captures/nos-offres.png)
   
-![Aperçu de la page Contact](https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/d8dea4b8a2236c19686b37db90ed2bafe69b9cf6/images/captures/nos-offres.png)
+![Aperçu de la page Contact](https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/0fbdb15bd97e93b7c196ba67ea3d4c5492e39bde/images/captures/contact.png)
 Aper
 
 
