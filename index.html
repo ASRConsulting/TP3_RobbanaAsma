@@ -42,16 +42,7 @@
         <a href="tel:+1234567890" class="text-[#8e8e8e] hover:text-[#26567a]">
           123-456-7890</a>
       </div>
-      <!--installation PWA-->
-      <button class="nav-link px-lg-4 px-2 text-[#8e8e8e] mr-4 hover:text-[#26567a]" id="butInstall"
-aria-label="Install" hidden>Installer Électros</button>
-<!--fin de l'installation PWA-->
-       <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-           <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#8e8e8e] dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 hover:text-[#26567a] dark:hover:bg-gray-700 dark:hover:text-white">
-               <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada"> 
-             English (Canada)
-           </button>
-           
+     
            <!-- Dropdown -->
          <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
            <ul class="py-2 font-medium" role="none">
@@ -122,6 +113,18 @@ aria-label="Install" hidden>Installer Électros</button>
       
        </header>
     <main>
+
+       <!--installation PWA-->
+       <button class="nav-link px-lg-4 px-2 text-[#8e8e8e] mr-4 hover:text-[#26567a]" id="butInstall"
+       aria-label="Install" hidden>Installer Électros</button>
+       <!--fin de l'installation PWA-->
+              <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                  <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#8e8e8e] dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 hover:text-[#26567a] dark:hover:bg-gray-700 dark:hover:text-white">
+                      <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada"> 
+                    English (Canada)
+                  </button>
+                  <!-- fin de l'installation PWA-->
+                  
   
          <!-- ajout de carrousel à partir de ce code https://flowbite.com/docs/components/carousel/ -->
         <section>
@@ -300,7 +303,7 @@ aria-label="Install" hidden>Installer Électros</button>
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script src="https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/a13e20886ee4baee8173fbb8183648b4c03395f5/js/install.js"></script>
+    <script src="js/install.js"></script>
  
 </body>
 </html>
