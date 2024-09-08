@@ -8,6 +8,7 @@ const urlsToCache = [
   'images/pwa/192-maskable-icon.png',
   'images/pwa/144-maskable-icon.png',
   'images/pwa/maskable-icon.png',
+  'js/install.js',
  
 ];
 
