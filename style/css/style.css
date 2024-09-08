@@ -1,4 +1,4 @@
-@import '../../node_modules/tailwindcss/base.css';
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 @font-face {
@@ -36,4 +36,4 @@ html, body, * {
 catalogue--img {
   max-width: 400px;
   max-height: 255px;
-  }/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
