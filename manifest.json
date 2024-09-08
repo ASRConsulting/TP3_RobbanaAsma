@@ -17,7 +17,7 @@
         "purpose": "any maskable"
       },
       {
-        "src": "/images/pwa/144-maskable-icon.png",
+        "src": "https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/f768d8756a2ea3301731e420e809588ec2919ded/images/pwa/144-maskable-icon.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "any maskable"
