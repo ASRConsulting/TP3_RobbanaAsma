@@ -10,7 +10,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <link rel="manifest" href="manifest.json">
-
        <!--script pour le service worker-->
        <script>
        if ('serviceWorker' in navigator) {
@@ -26,7 +25,6 @@
       }
     </script>
       <!--fin du script pour le service worker-->
-
 </head>
 <body>
   <header >
@@ -42,7 +40,27 @@
         <a href="tel:+1234567890" class="text-[#8e8e8e] hover:text-[#26567a]">
           123-456-7890</a>
       </div>
-     
+      <!--installation PWA-->
+      <button class="nav-link px-lg-4 px-2 text-[#8e8e8e] mr-4 hover:text-[#26567a]" id="butInstall"
+aria-label="Install" hidden>Installer Électros</button>
+<!--fin de l'installation PWA-->
+       <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
+           <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#8e8e8e] dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 hover:text-[#26567a] dark:hover:bg-gray-700 dark:hover:text-white">
+               <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada"> 
+             English (Canada)
+           </button>
+           
            <!-- Dropdown -->
          <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
            <ul class="py-2 font-medium" role="none">
@@ -113,25 +131,10 @@
       
        </header>
     <main>
-
-       
-          <div class="flex items-center justify-between px-4 py-2 bg-[#8e8e8e] dark:bg-gray-900">
-            <!--installation PWA-->
-       <button class="nav-link px-lg-4 px-2 text-[#8e8e8e] mr-4 hover:text-[#26567a]" id="butInstall"
-       aria-label="Install" hidden>Installer Électros</button>
-       <!--fin de l'installation PWA-->
-              <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-                  <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-[#8e8e8e] dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 hover:text-[#26567a] dark:hover:bg-gray-700 dark:hover:text-white">
-                      <img class="w-5 h-5 mr-2" src="images/canada.png" alt="Drapeau du Canada"> 
-                    English (Canada)
-                  </button>
-                  <!-- fin de l'installation PWA-->
-          </div>        
   
          <!-- ajout de carrousel à partir de ce code https://flowbite.com/docs/components/carousel/ -->
         <section>
             
-
           <div id="indicators-carousel" class=" container mx-auto mt-6 relative w-full" data-carousel="slide">
               <div
                           class="absolute z-40 top-0 left-0 mx-4 sm:mx-0 mt-36 sm:mt-0 sm:py-20 md:py-28 lg:py-20 xl:py-28 sm:pl-14 flex flex-col sm:justify-start items-start"
@@ -208,9 +211,7 @@
           </div>
           
                   </section>
-
       <!-- ajout de grid Tailwind CSS pour afficher les catégories-->
-
       <section class="container mx-auto py-12">
         <div class="grid grid-cols-12">
           <div class="col-span-12 text-center sm:pl-10">
@@ -248,7 +249,6 @@
   <!-- component -->
       <div class="container mx-auto mb-12">
         <div class="grid grid-rows-auto-1fr">    
-
   <div class="flex bg-white" style="height:600px;">
       <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
           <div>
@@ -283,7 +283,6 @@
         </section>
     </main>
     <!-- ajout de footer à partir de ce code https://flowbite.com/docs/components/footer/ -->        
-
 <footer class="container mx-auto bottom-0 left-0 z-20 w-full p-4 bg-[#8e8e8e] border-t  md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900 dark:border-gray-600">
   <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2024 <a href="index.html" class="hover:underline">Intweb2_TP3_RobbanaAsma</a>. Tous droits réservés.
   </span>
@@ -300,12 +299,10 @@
       </li>
   </ul>
 </footer>
-
     
-
 <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script src="js/install.js"></script>
+    <script src="https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/a13e20886ee4baee8173fbb8183648b4c03395f5/js/install.js"></script>
  
 </body>
 </html>
