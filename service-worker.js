@@ -2,13 +2,7 @@ const CACHE_NAME = 'cache-v3';
 const urlsToCache = [
   '/',
   'index.html',
-  'nos-offres.html',
-  'contact.html',
-  'style/css/style.css',
-  'images/pwa/192-maskable-icon.png',
-  'images/pwa/144-maskable-icon.png',
-  'images/pwa/maskable-icon.png',
-  'js/install.js',
+  
  
 ];
 
