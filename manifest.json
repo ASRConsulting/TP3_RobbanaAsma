@@ -17,13 +17,13 @@
         "purpose": "any maskable"
       },
       {
-        "src": "https://github.com/ASRConsulting/TP3_RobbanaAsma/blob/f768d8756a2ea3301731e420e809588ec2919ded/images/pwa/144-maskable-icon.png",
+        "src": "/TP3_RobbanaAsma/images/pwa/144-maskable-icon.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/images/pwa/maskable-icon.png",
+        "src": "/TP3_RobbanaAsma/images/pwa/maskable-icon.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
@@ -32,7 +32,7 @@
 
     "screenshots" : [
   {
-    "src": "/images/pwa/electros-residentiels.png",
+    "src": "/TP3_RobbanaAsma/images/pwa/electros-residentiels.png",
     "sizes": "1280x720",
     "type": "image/jpg",
     "platform": "wide"
