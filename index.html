@@ -12,6 +12,7 @@
     <link rel="manifest" href="manifest.json">
 
        <!--script pour le service worker-->
+       <script>
        if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/service-worker.js')
@@ -23,6 +24,7 @@
             });
         });
       }
+    </script>
       <!--fin du script pour le service worker-->
 
 </head>
