@@ -3,6 +3,9 @@ const installButton = document.getElementById('butInstall');
 
 // Écouter l'événement beforeinstallprompt
 window.addEventListener('beforeinstallprompt', (event) => {
+  // vérifier s'il y a un prompt d'installation en cours
+  console.log('Événement beforeinstallprompt capturé');
+
   // Empêcher l'affichage automatique de la boîte de dialogue
   event.preventDefault();
   deferredInstallPrompt = event;
