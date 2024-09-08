@@ -11,19 +11,19 @@
     "id": "electros-residentiels",
     "icons": [
       {
-        "src": "images/pwa/192-maskable-icon.png",
+        "src": "/images/pwa/192-maskable-icon.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "images/pwa/144-maskable-icon.png",
+        "src": "/images/pwa/144-maskable-icon.png",
         "sizes": "144x144",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "images/pwa/maskable-icon.png",
+        "src": "/images/pwa/maskable-icon.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
@@ -32,7 +32,7 @@
 
     "screenshots" : [
   {
-    "src": "images/pwa/acceuil.png",
+    "src": "/images/pwa/acceuil.png",
     "sizes": "1280x720",
     "type": "image/jpg",
     "platform": "wide",
