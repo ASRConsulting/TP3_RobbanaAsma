@@ -1,16 +1,16 @@
 const CACHE_NAME = 'cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
-  '/nos-offres.html',
-  '/contact.html',
-  '/styles.css',
-  '/images/',
-  '/images/pwa/192-maskable-icon.png',
-  '/images/pwa/144-maskable-icon.png',
-  '/images/pwa/maskable-icon.png',
-  '/tailwind.config.js',
-  '/validation.js',
+  'index.html',
+  'nos-offres.html',
+  'contact.html',
+  'style/css/styles.css',
+  'images/',
+  'images/pwa/192-maskable-icon.png',
+  'images/pwa/144-maskable-icon.png',
+  'images/pwa/maskable-icon.png',
+  'tailwind.config.js',
+  'validation.js',
 ];
 
 self.addEventListener('install', (event) => {
