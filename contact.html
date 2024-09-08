@@ -106,19 +106,49 @@
             <a href="index.html"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Accueil</a>
           </li>
-          <li>
-            <a href="nos-offres.html"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Nos
-              offres</a>
-          </li>
-          <li>
-            <a href="contact.html"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          <!-- Dropdown pour Nos Offres -->
+<li class="relative">
+  <button id="dropdownButton" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-expanded="false" aria-controls="dropdownMenu">
+    Nos Offres
+  </button>
 
+  <!-- Contenu du Dropdown -->
+  <div id="dropdownMenu" class="z-50 hidden absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg dark:bg-gray-800" aria-labelledby="dropdownButton">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+      <li>
+        <a href="nos-offres.html#solutions" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nos solutions</a>
+      </li>
+      <li>
+        <a href="nos-offres.html#marques" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nos marques</a>
+      </li>
+      <li>
+        <a href="nos-offres.html#gamme" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Nos électros résidentiels</a>
+      </li>
+    </ul>
+  </div>
+</li>
+
+
+      <li>
+        <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  
+<!-- Script pour activer le Dropdown -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', function () {
+      const isVisible = dropdownMenu.classList.contains('hidden');
+      dropdownMenu.classList.toggle('hidden', !isVisible);
+      dropdownButton.setAttribute('aria-expanded', !isVisible);
+    });
+  });
+</script>
   </header>
   <main>
     <!-- ajout de sections nos trois points de ventes grid tailwind css -->
